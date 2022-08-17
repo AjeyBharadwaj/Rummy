@@ -4,3 +4,4 @@ obj
 lib/obj
 *.o
 *.obj
+build
