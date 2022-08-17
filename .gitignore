@@ -1,0 +1,6 @@
+.*
+executable
+obj
+lib/obj
+*.o
+*.obj
