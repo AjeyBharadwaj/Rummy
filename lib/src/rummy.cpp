@@ -1,9 +1,11 @@
+#include <boost/log/trivial.hpp>
+
 #include "rummy.hpp"
 
 using namespace std;
 
 Rummy::Rummy() {
-    cout << "Test" << endl;
+    BOOST_LOG_TRIVIAL(fatal) << "A fatal severity message";
 }
 
 Rummy::~Rummy() {

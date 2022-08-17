@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
+find_package(Boost 1.70.0 COMPONENTS thread log log_setup)
+include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR}/lib/include)
 add_library(rummylib rummy.cpp)
+target_link_libraries(rummylib pthread Boost::log Boost::log_setup )
